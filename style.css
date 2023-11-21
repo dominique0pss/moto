@@ -1,0 +1,113 @@
+@charset "utf8-8";
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+body{
+    margin: 0;
+    background: #000000;
+    font-family: sans-serif;
+    color: #ffffff;
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/08/08/14/motorcycle-801259_1280.jpg);
+    
+}
+.container{
+   position: relative; 
+   width: 320px;
+   margin: 100px auto 0 auto;
+   perspective: 900px;
+   
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d ;
+    animation: rotate360 10s infinite forwards linear;
+}
+
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+@keyframes rotate360 {
+    from{
+transform: rotateY(0deg);
+    }
+
+    to{
+transform: rotateY(-360deg);
+    }
+}
+
+
+
+.imagem:nth-child(1){
+    background-image: url(https://cdn.pixabay.com/photo/2020/11/16/09/20/speed-5748456_1280.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://cdn.motor1.com/images/mgl/gbXAm/s1/lightning-motorcycle.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/25/16/46/pilots-1620036_1280.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://cdn.motor1.com/images/mgl/gbXAm/s1/lightning-motorcycle.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/25/16/46/pilots-1620037_1280.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://i0.wp.com/www.seubairrohoje.com.br/wp-content/uploads/2020/12/V-Max-1.jpg?ssl=1);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://cdn.motor1.com/images/mgl/y2g277/s3/primeiras-impressoes---honda-cbr-1000rr-r-fireblade-sp.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://www.motoo.com.br/fotos/2023/5/960_720/bmw_s-1000-rr_2023_1_18052023_54443_960_720.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://uploads.vrum.com.br/2022/12/a5ab87b4-suzuki-hayabusa-gsc-1300r-modelo-2023-preta-com-detalhes-cinza-branco-laranja-de-frente-no-asfalto.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+
+p{
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 2em;
+    color: #ff00006b;
+    text-decoration: underline;
+}
+
